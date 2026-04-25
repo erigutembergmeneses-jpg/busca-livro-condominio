@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Busca - Teoria das Janelas Quebradas no Condomínio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bibliotecas PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <h1>📖 Teoria das Janelas Quebradas</h1>
+            <h2>no Condomínio</h2>
+            <p class="subtitulo">Busque qualquer palavra ou assunto dentro do livro</p>
+        </div>
+
+        <!-- Caixa de busca -->
+        <div class="search-area">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Ex: janela quebrada, cheque especial, conselho fiscal, Porto Velho, depreciação...">
+                <button id="searchBtn" class="search-btn">Buscar</button>
+            </div>
+            <div class="search-info">
+                <span id="statusMsg">📌 Digite uma palavra e clique em Buscar</span>
+            </div>
+        </div>
+
+        <!-- Indicador de carregamento -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Carregando e indexando o livro... Isso pode levar alguns segundos.</p>
+        </div>
+
+        <!-- Barra de progresso -->
+        <div id="progressBar" class="progress-bar hidden">
+            <div class="progress-fill"></div>
+        </div>
+
+        <!-- Resultados da busca -->
+        <div id="results" class="results-area">
+            <!-- Os resultados aparecerão aqui -->
+        </div>
+
+        <!-- Dicas rápidas -->
+        <div class="dicas">
+            <h3>💡 Dicas para buscar:</h3>
+            <ul>
+                <li>Use palavras simples: <strong>síndico</strong>, <strong>assembleia</strong>, <strong>reserva</strong></li>
+                <li>Busque frases curtas: <strong>cheque especial</strong>, <strong>conselho fiscal</strong></li>
+                <li>Exemplo de assunto: <strong>Porto Velho</strong> (caso real)</li>
+                <li>Exemplo de conceito: <strong>janela quebrada</strong></li>
+            </ul>
+        </div>
+
+        <!-- Rodapé com QR Code (para referência) -->
+        <div class="footer">
+            <p>📚 <strong>Teoria das Janelas Quebradas no Condomínio</strong><br>
+            Aponte a câmera do celular para este QR Code e busque qualquer assunto do livro.</p>
+            <p class="small">© 2024 - Busca inteligente dentro do PDF | <a href="teoria-das-janelas-quebradas.pdf" target="_blank">Abrir livro completo</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
